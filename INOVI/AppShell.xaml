@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="INOVI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:INOVI"
+    xmlns:Pages="clr-namespace:INOVI.Pages"
+    Shell.TabBarIsVisible="False"
+    
+    >
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        Route="MainPage" />
+
+
+    <FlyoutItem Route="HomePage" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Profile" ContentTemplate="{DataTemplate Pages:HomePage}" />
+        <ShellContent Title="My stats" ContentTemplate="{DataTemplate Pages:SettingPage}" />
+        <ShellContent Title="My Requests" ContentTemplate="{DataTemplate Pages:AboutPage}" />
+
+    </FlyoutItem>
+
+</Shell>

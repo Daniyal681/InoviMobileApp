@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INOVI.MainPage"
+             BackgroundImageSource="Images/pngwing.svg">
+
+    <ScrollView>
+        <StackLayout
+            Spacing="25"
+            Padding="0,0"
+            Margin="10"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill">
+
+            <Image
+                Source="Images/mainlogo.svg"
+               
+                />
+
+         
+
+            <Label
+                Text="Welcome to Inovi Technologies"
+                TextColor="White"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button  Text="Login in" Clicked="OnLoginPage" BackgroundColor="#0E558E"></Button>
+            
+            <Button  Text="Sign up" Clicked="OnSignup" BackgroundColor="#0E558E"></Button>
+
+
+
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                <Label Text="Privacy Policy" TextColor="White" Margin="0,0,10,0" />
+                
+                <Label Text="|" TextColor="White" Margin="0,0,10,0" />
+                    
+                <Label Text="Inovi Telecom" TextColor="White"  />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
